@@ -42,11 +42,10 @@ export default function City() {
 				<div className="weather-side">
 					<div className="weather-gradient"></div>
 					<div className="date-container">
-						<h2 className="date-dayname">{`${new Date().toLocaleDateString({
-							weekday: "long",
-						})}`}</h2>
-						<i className="location-icon" data-feather="map-pin"></i>
-						<span className="location">{`${weather.name}, ${weather.sys.country}`}</span>
+						<h2 className="date-dayname">
+							{new Date().toLocaleDateString("tr-TR")}
+						</h2>
+						<span className="location">{`${cityParam}, ${weather.sys.country}`}</span>
 					</div>
 					<div className="weather-container">
 						<i className="weather-icon" data-feather="sun"></i>
