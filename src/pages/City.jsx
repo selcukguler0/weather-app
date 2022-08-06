@@ -133,7 +133,7 @@ export default function City() {
 						<button className="location-button">
 							{" "}
 							<i data-feather="map-pin"></i>
-							<Link to="/cities">Change location</Link>
+							<Link to="/map">Change location</Link>
 						</button>
 					</div>
 				</div>
