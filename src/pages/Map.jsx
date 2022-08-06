@@ -12,13 +12,7 @@ export default function Map() {
 					onClick={({ name }) => {
 						navigate(`/city/${name}`);
 					}}
-					cityWrapper={(cityComponent, cityData) => (
-						<Tooltip
-							title={`${cityData.plateNumber} - ${cityData.name}`}
-							key={cityData.id}>
-							{cityComponent}
-						</Tooltip>
-					)}
+					showTooltip={true}
 				/>
 			</div>
 		</div>

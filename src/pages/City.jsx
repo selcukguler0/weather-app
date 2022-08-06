@@ -38,7 +38,7 @@ export default function City() {
 	return (
 		<div className="flex items-center justify-center flex-col mt-4">
 			<Header />
-			<div className="container mt-[100px] mx-auto h-[400px] w-[574px]">
+			<div className="container mt-[80px] h-[400px] w-[600px]">
 				<div className="weather-side">
 					<div className="weather-gradient"></div>
 					<div className="date-container">
