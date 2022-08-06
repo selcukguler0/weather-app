@@ -1,4 +1,9 @@
-# Getting Started
+# React Weather App
+
+## Used
+React
+Tailwind
+OpenWeatherApi
 
 ## Available Scripts
 
