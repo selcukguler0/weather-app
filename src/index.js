@@ -9,8 +9,16 @@ import "./index.css";
 
 ReactDOM.render(
 	<React.StrictMode>
-		<a id="github" href="https://github.com/selcukguler0/weather_app">
-			<img src="./githubLogo.png" alt='github-logo' className="m-5 sticky text-white" />
+		<a
+			id="github"
+			href="https://github.com/selcukguler0/weather-app"
+			target="_blank"
+			rel="noreferrer">
+			<img
+				src="./githubLogo.png"
+				alt="github-logo"
+				className="m-5 sticky text-white"
+			/>
 		</a>
 		<BrowserRouter>
 			<Routes>
