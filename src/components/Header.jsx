@@ -2,7 +2,6 @@ import { Link, useLocation } from "react-router-dom";
 
 export default function Header() {
 	const location = useLocation();
-	console.log(location.pathname.includes("map"));
 	return (
 		<header className="flex justify-center mt-8 mb-5 m-auto gap-x-4">
 			<Link

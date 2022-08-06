@@ -15,7 +15,7 @@ ReactDOM.render(
 			target="_blank"
 			rel="noreferrer">
 			<img
-				src="./githubLogo.png"
+				src="/githubLogo.png"
 				alt="github-logo"
 				className="m-5 sticky text-white"
 			/>
