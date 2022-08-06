@@ -177,7 +177,7 @@ export const cityList = [
 	},
 	{
 		"id": 23,
-		"name": "Elâzığ",
+		"name": "Elazığ",
 		"latitude": "38.6810",
 		"longitude": "39.2264",
 		"population": 574304,

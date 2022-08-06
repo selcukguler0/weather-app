@@ -4,6 +4,8 @@ import { cityList } from "../components/cities";
 import Header from "../components/Header";
 import { GridLoader } from "react-spinners"; //Loading animation
 import "./city.css";
+import "../open-weather-icons.scss";
+import "../open-weather-icons.css";
 
 export default function City() {
 	const [loading, setLoading] = useState(true);
@@ -40,13 +42,17 @@ export default function City() {
 			<Header />
 			<div className="container mt-[80px] h-[400px] w-[600px]">
 				<div className="weather-side">
+					<i className={"owi owi-" + weather.weather[0].icon}></i>
 					<div className="weather-gradient"></div>
 					<div className="date-container">
 						<h2 className="date-dayname">
 							{new Date().toLocaleDateString("tr-TR")}
 						</h2>
-						<span className="location">{`${cityParam}, ${weather.sys.country}`}</span>
+						<span className="location">
+							{`${cityParam}, ${weather.sys.country}`}
+						</span>
 					</div>
+
 					<div className="weather-container">
 						<i className="weather-icon" data-feather="sun"></i>
 						<h1 className="weather-temp">{`${parseInt(
