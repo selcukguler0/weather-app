@@ -4,9 +4,6 @@ import Header from "../components/Header";
 import GridLoader from "react-spinners/GridLoader";
 
 export default function Cities() {
-	cityList.map((city) => {
-		console.log(city.name);
-	})
 	if (!cityList) {
 		return (
 			<div className="flex justify-center items-center ">

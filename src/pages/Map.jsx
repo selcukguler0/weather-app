@@ -1,6 +1,5 @@
 import TurkeyMap from "turkey-map-react";
 import { Tooltip } from "antd";
-import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 

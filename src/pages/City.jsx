@@ -15,7 +15,7 @@ export default function City() {
 
 	useEffect(() => {
 		const getData = async () => {
-			const currentCity = await cityList.find(
+			const currentCity = cityList.find(
 				(city) => city.name === cityParam
 			);
 			const response = await fetch(
@@ -26,7 +26,7 @@ export default function City() {
 			setLoading(false);
 		};
 		getData();
-	}, []);
+	}, [cityParam]);
 
 	if (loading || !weather) {
 		return (
