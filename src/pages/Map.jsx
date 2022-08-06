@@ -1,5 +1,4 @@
 import TurkeyMap from "turkey-map-react";
-import "antd/dist/antd.css";
 import { Tooltip } from "antd";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
