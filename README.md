@@ -1,10 +1,10 @@
 # React Weather App
 
-![Logo](https://i.imgur.com/rN9thus.png)
+![Logo](https://i.imgur.com/mMG58DV.png)
 
 ## Live
 
-[Live Preview](https://i.imgur.com/mMG58DV.png)
+[Live Preview](https:/weather.selcukguler.com)
 
 ## Used
 - React
