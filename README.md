@@ -4,7 +4,7 @@
 
 ## Live
 
-[Live Preview](https://weather.selcukguler.com/)
+[Live Preview](https://i.imgur.com/I08JYyd.png)
 
 ## Used
 - React
