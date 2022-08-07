@@ -21,14 +21,14 @@ export default function City() {
 			const currentCity = cityList.find((city) => city.name === cityParam);
 			//current weather
 			const response = await fetch(
-				`https://api.openweathermap.org/data/2.5/weather?lat=${currentCity.latitude}&lon=${currentCity.longitude}&appid=84a749c58e6fab4e9af9329daaed536a&units=metric`
+				`https://api.openweathermap.org/data/2.5/weather?lat=${currentCity.latitude}&lon=${currentCity.longitude}&appid=${process.env.REACT_APP_WEATHER_API_KEY}&units=metric`
 			); // fetch the weather from the openweathermap api
 			const data = await response.json();
 			setWeather(data);
 
 			//forecast weather
 			const response_forecast = await fetch(
-				`https://api.openweathermap.org/data/2.5/forecast?lat=${currentCity.latitude}&lon=${currentCity.longitude}&units=metric&appid=84a749c58e6fab4e9af9329daaed536a`
+				`https://api.openweathermap.org/data/2.5/forecast?lat=${currentCity.latitude}&lon=${currentCity.longitude}&units=metric&appid=${process.env.REACT_APP_WEATHER_API_KEY}`
 			); // fetch the weather from the openweathermap api
 			const data_forecast = await response_forecast.json();
 			setWeatherForecast(data_forecast);
