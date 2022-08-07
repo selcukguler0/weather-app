@@ -5,7 +5,15 @@ React
 Tailwind
 OpenWeatherApi
 
-## Available Scripts
+## Usage
+
+Clone project.
+
+### `git clone https://github.com/selcukguler0/weather-app`
+
+Enter project folder.
+
+### `cd weather-app`
 
 In the project directory, you can run:
 
