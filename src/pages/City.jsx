@@ -153,11 +153,13 @@ export default function City() {
 						</ul>
 					</div>
 					<div className="location-container">
-						<button className="location-button">
-							{" "}
-							<i data-feather="map-pin"></i>
-							<Link to="/map">Change location</Link>
-						</button>
+						<Link to="/map">
+							<button className="location-button">
+								{" "}
+								<i data-feather="map-pin"></i>
+								Change location
+							</button>
+						</Link>
 					</div>
 				</div>
 			</div>
