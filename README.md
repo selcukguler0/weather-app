@@ -1,11 +1,25 @@
 # React Weather App
 
-## Used
-React
-Tailwind
-OpenWeatherApi
+![Logo](https://i.imgur.com/rN9thus.png)
 
-## Available Scripts
+## Live
+
+[Live Preview](https://weather.selcukguler.com/)
+
+## Used
+- React
+- Tailwind
+- OpenWeatherApi
+
+## Usage
+
+Clone project.
+
+### `git clone https://github.com/selcukguler0/weather-app`
+
+Enter project folder.
+
+### `cd weather-app`
 
 In the project directory, you can run:
 
