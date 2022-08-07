@@ -4,7 +4,7 @@
 
 ## Live
 
-[Live Preview](https://i.imgur.com/I08JYyd.png)
+[Live Preview](https://i.imgur.com/mMG58DV.png)
 
 ## Used
 - React
