@@ -10,37 +10,53 @@ import "../open-weather-icons.css";
 export default function City() {
 	const [loading, setLoading] = useState(true);
 	const [weather, setWeather] = useState(null);
-
+	const [weatherForecast, setWeatherForecast] = useState("");
+	const weatherList = [];
 	// get the city name from the url
 	let cityParam = useParams();
 	cityParam = cityParam.name;
 
 	useEffect(() => {
 		const getData = async () => {
-			const currentCity = cityList.find(
-				(city) => city.name === cityParam
-			);
+			const currentCity = cityList.find((city) => city.name === cityParam);
+			//current weather
 			const response = await fetch(
 				`https://api.openweathermap.org/data/2.5/weather?lat=${currentCity.latitude}&lon=${currentCity.longitude}&appid=84a749c58e6fab4e9af9329daaed536a&units=metric`
 			); // fetch the weather from the openweathermap api
 			const data = await response.json();
 			setWeather(data);
+
+			//forecast weather
+			const response_forecast = await fetch(
+				`https://api.openweathermap.org/data/2.5/forecast?lat=${currentCity.latitude}&lon=${currentCity.longitude}&units=metric&appid=84a749c58e6fab4e9af9329daaed536a`
+			); // fetch the weather from the openweathermap api
+			const data_forecast = await response_forecast.json();
+			setWeatherForecast(data_forecast);
+
 			setLoading(false);
 		};
 		getData();
 	}, [cityParam]);
 
-	if (loading || !weather) {
+
+	if (loading || !weather || !weatherForecast) {
 		return (
 			<div className="flex justify-center items-center ">
 				<GridLoader color="white" />
 			</div>
 		);
 	}
+	for (let index = 5; index < 22; index += 8) {
+		weatherList.push({
+			data: weatherForecast.list[index].dt_txt.split(" ")[0],
+			temp: weatherForecast.list[index].main.temp,
+			icon: weatherForecast.list[index].weather[0].icon
+		});
+	}
 	return (
 		<div className="flex items-center justify-center flex-col mt-4">
 			<Header />
-			<div className="container mt-[80px] h-[400px] w-[600px]">
+			<div className="container mt-[80px] h-[400px] w-[640px]">
 				<div className="weather-side">
 					<i className={"owi owi-" + weather.weather[0].icon}></i>
 					<div className="weather-gradient"></div>
@@ -112,16 +128,17 @@ export default function City() {
 					</div>
 					<div className="week-container">
 						<ul className="week-list">
-							<li className="active">
-								<i className="day-icon" data-feather="sun"></i>
-								<span className="day-name">Min Temp</span>
-								<span className="day-temp">{`${weather.main.temp_min}°C`}</span>
-							</li>
-							<li>
-								<i className="day-icon" data-feather="cloud"></i>
-								<span className="day-name">Max Temp</span>
-								<span className="day-temp">{`${weather.main.temp_max}°C`}</span>
-							</li>
+							{/* forecast */}
+							{weatherList.map((item, index) => (
+								<li
+									key={index}
+									className={index === 1 ? "notactive" : "active"}>
+									<i className={`forecast-owi owi-${item.icon}`}></i>
+									<span className="date">{item.data}</span>
+									<span className="day-temp">{`${item.temp}°C`}</span>
+								</li>
+							))}
+
 							{/* <li>
 							<i className="day-icon" data-feather="cloud-snow"></i>
 							<span className="day-name">Thu</span>

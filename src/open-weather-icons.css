@@ -45,6 +45,20 @@
 	-webkit-font-smoothing: antialiased;
 }
 
+.forecast-owi {
+	display: inline-block;
+	transform: translate(0, 0);
+	text-rendering: auto;
+	font: normal normal 400 14px/1 OpenWeatherIcons;
+	font-size: 30px;
+	top: 5%;
+	left: 50%;
+	transform: translateX(50%);
+	z-index: 1;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
 .owi-lg {
 	vertical-align: -15%;
 	line-height: 0.75em;

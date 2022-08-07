@@ -165,10 +165,12 @@ body {
 	border-radius: 10px;
 }
 
-.week-list>li .day-name {
+.week-list>li .date {
 	display: block;
+	font-size: 10px;
 	margin: 10px 0 0 0;
 	text-align: center;
+
 }
 
 .week-list>li .day-icon {
