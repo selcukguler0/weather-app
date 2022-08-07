@@ -1,7 +1,8 @@
 # React Weather App
 
 ## Live
-[weather.selcukguler.com]: weather.selcukguler.com
+
+[Live Preview](https://weather.selcukguler.com/)
 
 ## Used
 - React
