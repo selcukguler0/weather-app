@@ -46,6 +46,10 @@ export default function City() {
 			</div>
 		);
 	}
+
+	//starting from index:5 for guarante the weather of next day
+	//increasing the index by 8 for get weather of next day
+	//limit 22 for get next 3 days weather
 	for (let index = 5; index < 22; index += 8) {
 		weatherList.push({
 			data: weatherForecast.list[index].dt_txt.split(" ")[0],
