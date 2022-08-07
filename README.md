@@ -1,12 +1,12 @@
 # React Weather App
 
 ## Live
-weather.selcukguler.com
+[weather.selcukguler.com]: weather.selcukguler.com
 
 ## Used
--React
--Tailwind
--OpenWeatherApi
+- React
+- Tailwind
+- OpenWeatherApi
 
 ## Usage
 
