@@ -56,7 +56,7 @@ export default function City() {
 	return (
 		<div className="flex items-center justify-center flex-col mt-4">
 			<Header />
-			<div className="container mt-[80px] h-[400px] w-[640px]">
+			<div className="container mt-[80px] h-[400px] w-[650px]">
 				<div className="weather-side">
 					<i className={"owi owi-" + weather.weather[0].icon}></i>
 					<div className="weather-gradient"></div>
