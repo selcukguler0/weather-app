@@ -24,7 +24,7 @@ Enter project folder.
 Install Dependencies.
 
 ### `npm install`
-(you may need to run with 'force') ### `npm --force install`
+(you may need to run with 'force') `npm --force install`
 
 In the project directory, you can run:
 
