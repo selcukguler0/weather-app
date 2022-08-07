@@ -21,6 +21,11 @@ Enter project folder.
 
 ### `cd weather-app`
 
+Install Dependencies.
+
+### `npm install`
+(you may need to run with 'force') ### `npm --force install`
+
 In the project directory, you can run:
 
 ### `npm start`
