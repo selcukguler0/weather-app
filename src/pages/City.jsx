@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
-import { cityList } from "../components/cities";
+import { cityList } from "../data/cities";
 import Header from "../components/Header";
 import { GridLoader } from "react-spinners"; //Loading animation
 import "./city.css";
