@@ -1,5 +1,7 @@
 # React Weather App
 
+![Logo](https://i.imgur.com/rN9thus.png)
+
 ## Live
 
 [Live Preview](https://weather.selcukguler.com/)
